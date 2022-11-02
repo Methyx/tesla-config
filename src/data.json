@@ -1,0 +1,18 @@
+[
+  {
+    "name": "type",
+    "title": "Sélectionnez votre véhicule",
+    "options": [
+      { "title": "Grande Autonomie", "price": 90700 },
+      { "title": "Performance", "price": 106700 }
+    ]
+  },
+  {
+    "name": "color",
+    "title": "Sélectionnez la couleur",
+    "options": [
+      { "title": "Blanc Nacré Multicouches", "price": 0 },
+      { "title": "Noir Uni", "price": 1000 }
+    ]
+  }
+]

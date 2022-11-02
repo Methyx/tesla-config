@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Category from "./components/Category";
+import data from "./data.json";
+import { useState } from "react";
 
 function App() {
+  const [vehiculePrice, setVehiculePrice] = useState(0);
+  const [colorPrice, setColorPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Tesla Config</h1>
       </header>
+      <main>
+        <Category
+          name={data[0].name}
+          title={data[0].title}
+          options={data[0].options}
+          func={setVehiculePrice}
+        />
+        <Category
+          name={data[1].name}
+          title={data[1].title}
+          options={data[1].options}
+          func={setColorPrice}
+        />
+        {totalPrice !== vehiculePrice + colorPrice &&
+          setTotalPrice(vehiculePrice + colorPrice)}
+        <h3>{`Prix Total = ${totalPrice} €`}</h3>
+      </main>
     </div>
   );
 }
