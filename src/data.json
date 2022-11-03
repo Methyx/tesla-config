@@ -12,7 +12,8 @@
     "title": "Sélectionnez la couleur",
     "options": [
       { "title": "Blanc Nacré Multicouches", "price": 0 },
-      { "title": "Noir Uni", "price": 1000 }
+      { "title": "Noir Uni", "price": 1000 },
+      { "title": "Vert d'eau", "price": 1500 }
     ]
   }
 ]

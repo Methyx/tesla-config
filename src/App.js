@@ -18,13 +18,13 @@ function App() {
           name={data[0].name}
           title={data[0].title}
           options={data[0].options}
-          func={setVehiculePrice}
+          categoryPrice={setVehiculePrice}
         />
         <Category
           name={data[1].name}
           title={data[1].title}
           options={data[1].options}
-          func={setColorPrice}
+          categoryPrice={setColorPrice}
         />
         {totalPrice !== vehiculePrice + colorPrice &&
           setTotalPrice(vehiculePrice + colorPrice)}
